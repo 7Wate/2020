@@ -1,22 +1,105 @@
-header,nav,main,footer{
-    position: fixed;
-    display: block;
-    z-index: 100;
-    width: 100%;
-}
-
-
 header{
-    height: 100px;
-}
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
 
-
-main{
     top: 0px;
     left: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 15px 30px;
 
-    height: 100vh;
+    box-sizing: border-box;
+
     z-index: 10;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo > img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+nav{
+    padding: 19px 0px;
+}
+
+nav > a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 0px 7px;
+}
+
+#search span::before{
+    content: '';
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+
+    z-index: 100;
+}
+
+#search span::after{
+    content: '';
+    position: absolute;
+
+    width: 11px;
+    height: 17px;
+
+    margin-top: 9px;
+    margin-left: 23px;
+
+    border-bottom: 1px solid white;
+
+    transform: rotate(50deg);
+
+    z-index: 100;
+}
+
+#toggle span,#toggle span::after,#toggle span::before{
+    content: '';
+    position: absolute;
+
+    width: 27px;
+    height: 1px;
+
+    background-color: white;
+}
+
+#toggle span{
+    margin-top: 15px;
+    margin-left: 3px;
+}
+
+#toggle span::after{
+    top: -8px;
+}
+#toggle span::before{
+    top: 8px;
+    width: 17px;
+}
+
+main{
+    position: fixed;
+
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
 }
 
 main{
@@ -25,18 +108,63 @@ main{
     background-repeat: no-repeat; 
 }
 
+/* 菜单 */
+menu{
+    position: fixed;
 
-nav{
     top: 0px;
     right: 0px;
-
     height: 100vh;
     width: 300px;
+
+    margin: 0 0;
+    padding: 100px 50px;
+
+    box-sizing: border-box;
+    background-color: #333;
+
+    z-index: 1;
 }
 
+
+ul,li{
+    list-style: none;
+}
+
+ul{
+    padding: 0px 50px;
+}
+
+li{
+    display: block;
+    padding: 5px 0px;
+    margin-bottom: 21px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li a{
+    color: #fff;
+}
+
+
 footer{
-    height: 18px;
+    position: fixed;
+    display: flex;
 
     bottom: 0px;
     left: 0px;
+    width: 100%;
+    height: 18px;
+
+    padding: 26px 0px;
+
+    z-index: 0;
+}
+
+footer span{
+    margin: 0px auto;
+    color: white;
 }
