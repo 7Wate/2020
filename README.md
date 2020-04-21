@@ -2,7 +2,7 @@
 
 7Wate 个人站点首页静态网站
 
-
+![初版样式](https://static.7wate.com/img/2020/04/21/www-20200422.png)
 
 ## License
 
