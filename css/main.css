@@ -34,6 +34,10 @@ nav > a{
     height: 32px;
     margin: 0px 7px;
 }
+#search span,#search span::before,#search span::after{
+    transition: all 200ms ease-in-out;
+}
+
 #search span::before{
     content: '';
     position: absolute;
@@ -75,6 +79,7 @@ nav > a{
     height: 1px;
 
     background-color: white;
+    transition: all 200ms ease-in-out;
 }
 
 #toggle span{
@@ -127,7 +132,7 @@ menu{
     position: fixed;
 
     top: 0px;
-    right: 0px;
+    right: -300px;
     height: 100vh;
     width: 300px;
 
@@ -137,6 +142,7 @@ menu{
     box-sizing: border-box;
     background-color: #333;
 
+    transition: all 200ms ease-in-out;
     z-index: 1;
 }
 
@@ -187,5 +193,5 @@ footer span{
     display: none;
 }
 .open{
-    display: inline;
+    right: 0px;
 }
