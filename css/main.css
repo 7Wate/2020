@@ -34,7 +34,6 @@ nav > a{
     height: 32px;
     margin: 0px 7px;
 }
-
 #search span::before{
     content: '';
     position: absolute;
@@ -91,6 +90,22 @@ nav > a{
     width: 17px;
 }
 
+.active span{
+    background-color: #333!important;
+}
+.active span::after,.active span::before{
+    top: 0px!important;
+    background: #fff!important;
+}
+.active span::after{
+    transform: rotate(45deg);
+}
+.active span::before{
+    transform: rotate(-45deg);
+    width: 27px!important;
+}
+
+
 main{
     position: fixed;
 
@@ -108,7 +123,6 @@ main{
     background-repeat: no-repeat; 
 }
 
-/* 菜单 */
 menu{
     position: fixed;
 
@@ -167,4 +181,11 @@ footer{
 footer span{
     margin: 0px auto;
     color: white;
+}
+
+.hide{
+    display: none;
+}
+.open{
+    display: inline;
 }
