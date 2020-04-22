@@ -1,3 +1,8 @@
+body{
+    font-family:-apple-system , BlinkMacSystemFont , "PingFang SC" , "Hiragino Sans GB" , "Microsoft YaHei" , "Helvetica Neue", "Segoe UI" , "Microsoft Yahei" , Helvetica , Arial , "Apple Color Emoji" , sans-serif;
+    font-size:15px;
+}
+
 header{
     position: fixed;
     display: flex;
@@ -48,7 +53,7 @@ nav > a{
     margin-top: 5px;
     margin-left: 5px;
 
-    border: 1px solid white;
+    border: 1px solid #fbeae9;
     border-radius: 50%;
 
     z-index: 100;
@@ -64,7 +69,7 @@ nav > a{
     margin-top: 9px;
     margin-left: 23px;
 
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fbeae9;
 
     transform: rotate(50deg);
 
@@ -78,7 +83,7 @@ nav > a{
     width: 27px;
     height: 1px;
 
-    background-color: white;
+    background-color: #fbeae9;
     transition: all 200ms ease-in-out;
 }
 
@@ -100,7 +105,7 @@ nav > a{
 }
 .active span::after,.active span::before{
     top: 0px!important;
-    background: #fff!important;
+    background: #fbeae9!important;
 }
 .active span::after{
     transform: rotate(45deg);
@@ -123,7 +128,7 @@ main{
 }
 
 main{
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg.png);
     background-size: 100% auto; 
     background-repeat: no-repeat; 
 }
@@ -166,7 +171,7 @@ a{
 }
 
 li a{
-    color: #fff;
+    color: #fbeae9;
 }
 
 
@@ -186,7 +191,8 @@ footer{
 
 footer span{
     margin: 0px auto;
-    color: white;
+    color: #fbeae999;
+    font-size: 1.175em;
 }
 
 .hide{
