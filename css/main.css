@@ -43,6 +43,13 @@ nav > a{
     transition: all 200ms ease-in-out;
 }
 
+#search{
+    opacity: .5;
+}
+#search:hover{
+    opacity: 1;
+}
+
 #search span::before{
     content: '';
     position: absolute;
@@ -85,6 +92,13 @@ nav > a{
 
     background-color: #fbeae9;
     transition: all 200ms ease-in-out;
+}
+
+#toggle{
+    opacity: .5;
+}
+#toggle:hover{
+    opacity: 1;
 }
 
 #toggle span{
@@ -168,6 +182,9 @@ li{
 
 a{
     text-decoration: none;
+}
+a:hover{
+    opacity: .7;
 }
 
 li a{
