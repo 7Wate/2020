@@ -9,7 +9,6 @@
     <meta name="keywords" content="HTML, DHTML, CSS, XML, XHTML, JavaScript, VBScript">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -18,17 +17,17 @@
 
     <header>
         <a class="logo" href="#">
-            <img src="https://demo.typecho.me/variant/usr/themes/variant/images/logo.png" alt="">
+            <img src="img/logo.png" alt="">
         </a>
-        <nav>
-            <a id="search" href="#">
-                <span></span>
-            </a>
-            <a id="toggle" href="#">
-                <span></span>
-            </a>
-        </nav>
     </header>
+    <nav>
+        <a id="search" href="#">
+            <span></span>
+        </a>
+        <a id="toggle" href="#" onclick="toggle()">
+            <span></span>
+        </a>
+    </nav>
     <main>
 
     </main>
@@ -55,10 +54,28 @@
         </ul>
     </menu>
     <footer>
-        <span>© 2020 7wate. All rights reserved.</span>
+        <span>© 2020 7Wate . 豫ICP备18024405号-3</span>
     </footer>
-    <script src="js/vendor/jquery-3.4.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        function toggle() {
+            var toggle = document.getElementById("toggle");
+            var search = document.getElementById("search");
+            var menu = document.getElementById("menu");
+
+
+            if (toggle.classList.contains('active')){
+                toggle.classList.remove('active');
+                search.classList.remove('hide')
+                menu.classList.remove('open');
+                return;
+            }
+
+
+            toggle.classList.add('active');
+            search.classList.add('hide');
+            menu.classList.add('open');
+        }
+    </script>
 </body>
 
 </html>

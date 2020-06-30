@@ -16,7 +16,6 @@ header{
 
     box-sizing: border-box;
 
-    z-index: 10;
 }
 
 .logo{
@@ -30,6 +29,10 @@ header{
 }
 
 nav{
+    position: fixed;
+    top: 19px;
+    right: 19px;
+    z-index: 99;
     padding: 19px 0px;
 }
 
@@ -141,11 +144,23 @@ main{
     z-index: -1;
 }
 
-main{
+@media screen and (max-width:1367px) {
+    main {
+        background-size: auto 100%;
+        
+    }
+}@media screen and (min-width:1367px) {
+    main {
+        background-size:auto  auto ;  
+    }
+}
+
+main{ 
+    background-position: 52%;
     background-image: url(../img/bg.png);
-    background-size: 100% auto; 
     background-repeat: no-repeat; 
 }
+
 
 menu{
     position: fixed;
@@ -208,7 +223,7 @@ footer{
 
 footer span{
     margin: 0px auto;
-    color: #fbeae999;
+    color: #fff;
     font-size: 1.175em;
 }
 
