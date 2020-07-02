@@ -1,28 +1,33 @@
 /* 默认导航栏搜索框色彩 */
-.default > nav > a#search > span::before,
-.default > nav > a#search > span::after {    
+
+.default>nav>a#search>span::before, .default>nav>a#search>span::after {
     border-color: #fbeae9;
 }
+
 /* 默认导航栏菜单栏色彩 */
-.default > nav > a#toggle > span, 
-.default > nav > a#toggle > span::before,
-.default > nav > a#toggle > span::after {    
+
+.default>nav>a#toggle>span, .default>nav>a#toggle>span::before, .default>nav>a#toggle>span::after {
     background-color: #fbeae9;
 }
+
 /* 默认导航栏菜单栏激活色彩 */
-.default > nav > a.active > span::before,
-.default > nav > a.active >span::after {    
+
+.default>nav>a.active>span::before, .default>nav>a.active>span::after {
     background: #fbeae9!important;
 }
+
 /* 默认右侧菜单栏色彩 */
-.default > menu {
+
+.default>menu {
     background-color: #333;
 }
+
 /* 默认右侧菜单栏链接色彩 */
-.default > menu > ul > li > a{
+
+.default>menu>ul>li>a {
     color: #fbeae9;
 }
-.default > footer > span {
+
+.default>footer>span {
     color: #fff;
 }
-

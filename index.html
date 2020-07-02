@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/background.css">
 
 </head>
 
@@ -35,7 +36,7 @@
     <menu id="menu">
         <ul>
             <li>
-                <a href="https://www.7wate.com/">首页</a>
+                <a href="#/" onclick="index()">首页</a>
             </li>
             <li>
                 <a href="#">导航</a>
@@ -50,7 +51,7 @@
                 <a href="https://wiki.7wate.com/">维基</a>
             </li>
             <li>
-                <a href="#">关于</a>
+                <a href="#" onclick="about()">关于</a>
             </li>
         </ul>
     </menu>
@@ -58,32 +59,40 @@
         <span>© 2020 7Wate . 豫ICP备18024405号-3</span>
     </footer>
 
-    <background class="short">
-
+    <background>
     </background>
 
     <script>
         function toggle() {
-            var toggle = document.getElementById("toggle");
-            var search = document.getElementById("search");
-            var menu = document.getElementById("menu");
-            var background = document.getElementsByTagName("background");
+            bodyToggleClass("active");
+        }
+        function index() {
+            bodyToggleClass("active", "about");
+        }
+        function about() {
+            bodyToggleClass("about", "active");
+        }
 
-            if (toggle.classList.contains('active')){
-                toggle.classList.remove('active');
-                search.classList.remove('hide')
-                menu.classList.remove('open');
-                background.classList.remove('short');
-                
-                return;
+
+        function bodyToggleClass(className, orClassName) {
+            var body = document.getElementsByTagName("body")[0];
+
+
+            if (orClassName) {
+                body.classList.remove(orClassName);
             }
 
 
-            toggle.classList.add('active');
-            search.classList.add('hide');
-            menu.classList.add('open');
-            background.classList.add('short');
+            if (body.classList.contains(className)) {
+                body.classList.remove(className);
+
+                return;
+            }
+
+            body.classList.add(className);
         }
+
+
     </script>
 </body>
 

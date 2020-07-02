@@ -1,28 +1,31 @@
-body{
-    font-family:-apple-system , BlinkMacSystemFont , "PingFang SC" , "Hiragino Sans GB" , "Microsoft YaHei" , "Helvetica Neue", "Segoe UI" , "Microsoft Yahei" , Helvetica , Arial , "Apple Color Emoji" , sans-serif;
-    font-size:15px;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", "Segoe UI", "Microsoft Yahei", Helvetica, Arial, "Apple Color Emoji", sans-serif;
+    font-size: 15px;
 }
-/* 头部 */
-header{
-    position: fixed;
 
+/* 头部 */
+
+header {
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100px;
     padding: 15px 30px;
-
     box-sizing: border-box;
-
 }
+
 /* LOGO */
-.logo > img {
+
+.logo>img {
     height: 70px;
     width: auto;
     max-width: 100%;
 }
+
 /* 导航栏 */
-nav{
+
+nav {
     position: fixed;
     top: 19px;
     right: 19px;
@@ -30,252 +33,159 @@ nav{
     padding: 19px 0px;
 }
 
-nav > a{
+nav>a {
     display: inline-block;
     width: 32px;
     height: 32px;
     margin: 0px 7px;
 }
 
-
 /* 导航栏搜索按钮 */
-#search span,#search span::before,#search span::after{
+
+#search span, #search span::before, #search span::after {
     transition: all 200ms ease-in-out;
 }
 
-#search{
+#search {
     opacity: .5;
 }
-#search:hover{
+
+#search:hover {
     opacity: 1;
 }
 
-#search span::before{
+.active>nav>#search>span {
+    display: none;
+}
+
+#search span::before {
     content: '';
     position: absolute;
-
     width: 15px;
     height: 15px;
-
     margin-top: 5px;
     margin-left: 5px;
-
     border: 1px solid;
     border-radius: 50%;
-
     z-index: 100;
 }
 
-#search span::after{
+#search span::after {
     content: '';
     position: absolute;
-
     width: 11px;
     height: 17px;
-
     margin-top: 9px;
     margin-left: 23px;
-
     border-bottom: 1px solid;
     transform: rotate(50deg);
-
     z-index: 100;
 }
 
 /* 导航栏菜单按钮 */
 
-#toggle span,#toggle span::after,#toggle span::before{
+#toggle span, #toggle span::after, #toggle span::before {
     content: '';
     position: absolute;
-
     width: 27px;
     height: 1px;
-
     transition: all 200ms ease-in-out;
 }
 
-#toggle{
+#toggle {
     opacity: .5;
 }
-#toggle:hover{
+
+#toggle:hover {
     opacity: 1;
 }
 
-#toggle span{
+#toggle span {
     margin-top: 15px;
     margin-left: 3px;
 }
 
-#toggle span::after{
+#toggle span::after {
     top: -8px;
 }
-#toggle span::before{
+
+#toggle span::before {
     top: 8px;
     width: 17px;
 }
 
 /* 导航栏菜单动画 */
-.active span{
+
+.active>nav>#toggle>span {
     background-color: #0000!important;
 }
 
-.active span::after{
+.active>nav>#toggle>span::after {
     top: 0px!important;
     transform: rotate(45deg);
 }
-.active span::before{
+
+.active>nav>#toggle>span::before {
     top: 0px!important;
     transform: rotate(-45deg);
     width: 27px!important;
 }
 
+/* 菜单栏 */
 
-/* main{
+menu {
     position: fixed;
-
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-
-    z-index: -1;
-}
-
-@media screen and (max-width:1367px) {
-    main {
-        background-size: auto 100%;
-        
-    }
-}@media screen and (min-width:1367px) {
-    main {
-        background-size:auto  auto ;  
-    }
-}
-
-main{ 
-    background-position: 52%;
-    background-image: url(../img/bg.png);
-    background-repeat: no-repeat; 
-} */
-
-
-menu{
-    position: fixed;
-
     top: 0px;
     right: -300px;
     height: 100vh;
     width: 300px;
-
     margin: 0 0;
     padding: 100px 50px;
-
     box-sizing: border-box;
-
     transition: all 200ms ease-in-out;
     z-index: 1;
 }
 
+.active>menu {
+    right: 0px;
+}
 
-ul,li{
+ul, li {
     list-style: none;
 }
 
-ul{
+ul {
     padding: 0px 50px;
 }
 
-li{
+li {
     display: block;
     padding: 5px 0px;
     margin-bottom: 21px;
 }
 
-a{
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     opacity: .7;
 }
 
+/* 页脚 */
 
-
-
-footer{
+footer {
     position: fixed;
     display: flex;
-
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: 18px;
-
     padding: 26px 0px;
-
     z-index: 0;
 }
 
-footer span{
+footer span {
     margin: 0px auto;
     font-size: 1.175em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hide{
-    display: none;
-}
-.open{
-    right: 0px;
-}
-
-
-
-
-background{
-    position: fixed;
-
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-
-    z-index: -1;
-}
-
-@media screen and (max-width:1367px) {
-    background {
-        background-size:auto 100%;
-        
-    }
-}@media screen and (min-width:1367px) {
-    background {
-        background-size:auto auto ;  
-    }
-}
-
-background{ 
-    transition: all 700ms ease-out;
-    background-position: 52%;
-    background-image: url(../img/bg.png);
-    background-repeat: no-repeat; 
-}
-
-.short{
-    height: 100px;
-    background-size:auto auto; 
-}
-
