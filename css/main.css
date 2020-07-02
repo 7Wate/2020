@@ -13,6 +13,7 @@ header {
     height: 100px;
     padding: 15px 30px;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 /* LOGO */
@@ -130,6 +131,101 @@ nav>a {
     transform: rotate(-45deg);
     width: 27px!important;
 }
+
+/* 主体 */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    margin-top: 70px;
+    width: 1300px;
+    height: 70%;
+}
+
+article {
+    padding: 12px 26px;
+}
+
+@media screen and (max-width:1367px) {
+    .container {
+        flex-wrap: wrap;
+        width: 90%;
+        height: 70%;
+    }
+    .a {
+        width: 100%;
+    }
+    .b {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1367px) {
+    .a {
+        flex: 0 0 30%;
+        max-width: 310px;
+    }
+    .b {
+        flex: 0 0 70%;
+        max-width: 990px;
+    }
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.links > a {
+    width: 28px;
+    height: 28px;
+    margin: 2px 5px;
+}
+
+
+
+
+
+
+
+
+
+.a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title > img {
+    width: auto;
+    height: 210px;
+    border-radius: 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 菜单栏 */
 
