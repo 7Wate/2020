@@ -2,11 +2,9 @@ body{
     font-family:-apple-system , BlinkMacSystemFont , "PingFang SC" , "Hiragino Sans GB" , "Microsoft YaHei" , "Helvetica Neue", "Segoe UI" , "Microsoft Yahei" , Helvetica , Arial , "Apple Color Emoji" , sans-serif;
     font-size:15px;
 }
-
+/* 头部 */
 header{
     position: fixed;
-    display: flex;
-    justify-content: space-between;
 
     top: 0px;
     left: 0px;
@@ -17,17 +15,13 @@ header{
     box-sizing: border-box;
 
 }
-
-.logo{
-    flex: 1;
-}
-
+/* LOGO */
 .logo > img {
-    height: 100%;
+    height: 70px;
     width: auto;
     max-width: 100%;
 }
-
+/* 导航栏 */
 nav{
     position: fixed;
     top: 19px;
@@ -42,6 +36,9 @@ nav > a{
     height: 32px;
     margin: 0px 7px;
 }
+
+
+/* 导航栏搜索按钮 */
 #search span,#search span::before,#search span::after{
     transition: all 200ms ease-in-out;
 }
@@ -63,7 +60,7 @@ nav > a{
     margin-top: 5px;
     margin-left: 5px;
 
-    border: 1px solid #fbeae9;
+    border: 1px solid;
     border-radius: 50%;
 
     z-index: 100;
@@ -79,12 +76,13 @@ nav > a{
     margin-top: 9px;
     margin-left: 23px;
 
-    border-bottom: 1px solid #fbeae9;
-
+    border-bottom: 1px solid;
     transform: rotate(50deg);
 
     z-index: 100;
 }
+
+/* 导航栏菜单按钮 */
 
 #toggle span,#toggle span::after,#toggle span::before{
     content: '';
@@ -93,7 +91,6 @@ nav > a{
     width: 27px;
     height: 1px;
 
-    background-color: #fbeae9;
     transition: all 200ms ease-in-out;
 }
 
@@ -117,23 +114,23 @@ nav > a{
     width: 17px;
 }
 
+/* 导航栏菜单动画 */
 .active span{
-    background-color: #333!important;
+    background-color: #0000!important;
 }
-.active span::after,.active span::before{
-    top: 0px!important;
-    background: #fbeae9!important;
-}
+
 .active span::after{
+    top: 0px!important;
     transform: rotate(45deg);
 }
 .active span::before{
+    top: 0px!important;
     transform: rotate(-45deg);
     width: 27px!important;
 }
 
 
-main{
+/* main{
     position: fixed;
 
     top: 0px;
@@ -159,7 +156,7 @@ main{
     background-position: 52%;
     background-image: url(../img/bg.png);
     background-repeat: no-repeat; 
-}
+} */
 
 
 menu{
@@ -174,7 +171,6 @@ menu{
     padding: 100px 50px;
 
     box-sizing: border-box;
-    background-color: #333;
 
     transition: all 200ms ease-in-out;
     z-index: 1;
@@ -202,9 +198,7 @@ a:hover{
     opacity: .7;
 }
 
-li a{
-    color: #fbeae9;
-}
+
 
 
 footer{
@@ -223,9 +217,23 @@ footer{
 
 footer span{
     margin: 0px auto;
-    color: #fff;
     font-size: 1.175em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hide{
     display: none;
@@ -233,3 +241,41 @@ footer span{
 .open{
     right: 0px;
 }
+
+
+
+
+background{
+    position: fixed;
+
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
+}
+
+@media screen and (max-width:1367px) {
+    background {
+        background-size:auto 100%;
+        
+    }
+}@media screen and (min-width:1367px) {
+    background {
+        background-size:auto auto ;  
+    }
+}
+
+background{ 
+    transition: all 700ms ease-out;
+    background-position: 52%;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat; 
+}
+
+.short{
+    height: 100px;
+    background-size:auto auto; 
+}
+

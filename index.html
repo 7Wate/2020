@@ -10,10 +10,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color.css">
 
 </head>
 
-<body>
+<body class="default">
 
     <header>
         <a class="logo" href="#">
@@ -56,17 +57,24 @@
     <footer>
         <span>© 2020 7Wate . 豫ICP备18024405号-3</span>
     </footer>
+
+    <background class="short">
+
+    </background>
+
     <script>
         function toggle() {
             var toggle = document.getElementById("toggle");
             var search = document.getElementById("search");
             var menu = document.getElementById("menu");
-
+            var background = document.getElementsByTagName("background");
 
             if (toggle.classList.contains('active')){
                 toggle.classList.remove('active');
                 search.classList.remove('hide')
                 menu.classList.remove('open');
+                background.classList.remove('short');
+                
                 return;
             }
 
@@ -74,6 +82,7 @@
             toggle.classList.add('active');
             search.classList.add('hide');
             menu.classList.add('open');
+            background.classList.add('short');
         }
     </script>
 </body>
