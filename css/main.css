@@ -2,6 +2,7 @@ body {
 	font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue","Segoe UI","Microsoft Yahei",Helvetica,Arial,"Apple Color Emoji",sans-serif;
 	font-size:16px;
 }
+
 /* 头部 */
 
 header {
@@ -124,7 +125,7 @@ main {
 	height:90vh;
 }
 .container {
-	display:flex;
+	display:none;
 	margin-top:70px;
 	width:1300px;
 	height:70%;
