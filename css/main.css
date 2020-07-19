@@ -101,9 +101,6 @@ nav>a {
 }
 /* 导航栏菜单动画 */
 
-.active>nav>#toggle>span {
-	background-color:#0000!important;
-}
 .active>nav>#toggle>span::after {
 	top:0px!important;
 	transform:rotate(45deg);
