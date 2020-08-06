@@ -1,144 +1,169 @@
 <!doctype html>
 <html lang="zh">
-    
-    <head>
-        <meta charset="utf-8">
-        <title>7Wate - 喜欢异想天开的家伙</title>
-        <meta name="description" content="7Wate - 喜欢异想天开的家伙">
-        <meta name="keywords" content="7wate,7wate`s blog,7wate`s book,7wate`s wiki,7wate`s nav,zhouzhongping,typecho,php,blog">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/color.css">
-        <link rel="stylesheet" href="css/background.css"></head>
-    
-    <body class="default">
-        <header>
-            <a class="logo" href="#">
-                <img src="img/logo.png" alt=""></a>
-        </header>
-        <nav>
-            <a id="search" target="_blank" href="https://www.baidu.com">
-                <span></span>
-            </a>
-            <a id="toggle" href="#" onclick="toggle()">
-                <span></span>
-            </a>
-        </nav>
-        <main>
-            <div id="container" class="container">
-                <article class="left">
-                    <div class="logo-title">
-                        <img src="img/logo.jpg" alt="">
-                        <h2>七瓦特</h2>
-                        <p>一个喜欢异想天开的家伙</p>
-                    </div>
-                    <div class="links">
-                        <a target="_blank" href="https://www.amap.com/search?query=%E6%B2%B3%E5%8D%97%E9%83%91%E5%B7%9E">
-                            <svg t="1593674944328" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="49601" width="28" height="30">
-                                <path d="M512 1012.394667l-271.530667-271.530667a384 384 0 1 1 543.061334 0L512 1012.394667z m211.2-331.861334a298.666667 298.666667 0 1 0-422.4 0L512 891.733333l211.2-211.2zM512 554.666667a85.333333 85.333333 0 1 1 0-170.666667 85.333333 85.333333 0 0 1 0 170.666667z" p-id="49602" fill="#6a737d"></path>
-                            </svg>
-                        </a>
-                        <a target="_blank" href="https://blog.7wate.com/feed">
-                            <svg t="1593674965625" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3919" width="27" height="30">
-                                <path d="M128 128c424.149333 0 768 343.850667 768 768h-128c0-353.450667-286.549333-640-640-640V128z m0 298.666667c259.2 0 469.333333 210.133333 469.333333 469.333333h-128a341.333333 341.333333 0 0 0-341.333333-341.333333v-128z m0 298.666666a170.666667 170.666667 0 0 1 170.666667 170.666667H128v-170.666667z" p-id="3920" fill="#6a737d"></path>
-                            </svg>
-                        </a>
-                        <a target="_blank" href="mailto:admin@7wate.com">
-                            <svg t="1593675033325" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="24974" width="28" height="30">
-                                <path d="M128 128h768a42.666667 42.666667 0 0 1 42.666667 42.666667v682.666666a42.666667 42.666667 0 0 1-42.666667 42.666667H128a42.666667 42.666667 0 0 1-42.666667-42.666667V170.666667a42.666667 42.666667 0 0 1 42.666667-42.666667z m725.333333 180.821333l-338.261333 302.933334L170.666667 307.882667V810.666667h682.666666V308.821333zM192.469333 213.333333l322.133334 284.245334L832.085333 213.333333H192.469333z" p-id="24975" fill="#6a737d"></path>
-                            </svg>
-                        </a>
-                        <a href="#" onclick="wechart()">
-                            <svg t="1593675101701" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4576" width="30" height="30">
-                                <path d="M426.666667 626.176v-2.645333c0-107.008 86.016-197.034667 202.794666-223.274667C613.930667 302.037333 510.250667 221.866667 379.733333 221.866667 238.08 221.866667 128 316.288 128 425.813333c0 41.344 15.36 81.066667 44.373333 115.114667 1.365333 1.621333 3.541333 4.010667 6.485334 7.04a152.234667 152.234667 0 0 1 42.752 95.488 154.112 154.112 0 0 1 100.821333-18.858667c7.082667 1.109333 12.885333 1.962667 17.28 2.56A309.504 309.504 0 0 0 426.666667 626.133333z m19.498666 83.242667a392.917333 392.917333 0 0 1-117.461333 2.346666 813.056 813.056 0 0 1-19.370667-2.858666 68.778667 68.778667 0 0 0-46.08 9.045333l-81.237333 48.981333a34.389333 34.389333 0 0 1-20.906667 4.992 33.749333 33.749333 0 0 1-31.104-36.309333l6.4-75.989333a66.773333 66.773333 0 0 0-18.730666-52.181334 236.245333 236.245333 0 0 1-10.282667-11.178666C66.688 548.48 42.666667 489.514667 42.666667 425.770667 42.666667 266.026667 193.578667 136.533333 379.733333 136.533333c173.226667 0 315.861333 112.085333 334.933334 256.341334 143.872 6.528 258.133333 107.306667 258.133333 230.656 0 50.901333-19.456 97.962667-52.437333 136.106666-2.176 2.56-4.949333 5.546667-8.32 8.96a52.906667 52.906667 0 0 0-15.189334 41.642667l5.162667 60.714667a27.093333 27.093333 0 0 1-25.173333 29.013333 28.16 28.16 0 0 1-16.938667-4.010667l-65.834667-39.125333a56.405333 56.405333 0 0 0-37.290666-7.210667c-6.272 0.981333-11.52 1.706667-15.701334 2.261334a329.386667 329.386667 0 0 1-41.344 2.645333c-114.944 0-213.248-60.074667-253.568-145.109333z m297.685334 55.893333a141.866667 141.866667 0 0 1 71.509333 7.424 138.666667 138.666667 0 0 1 35.882667-64.085333c2.133333-2.133333 3.712-3.84 4.522666-4.778667 20.864-24.106667 31.701333-51.754667 31.701334-80.341333 0-76.970667-81.194667-145.664-187.733334-145.664-106.538667 0-187.733333 68.693333-187.733333 145.664s81.194667 145.664 187.733333 145.664c10.282667 0 20.48-0.682667 30.464-1.962667 3.413333-0.426667 8.021333-1.066667 13.653334-1.962667z" p-id="4577" fill="#6a737d"></path>
-                            </svg>
-                        </a>
-                        <a target="_blank" href="https://github.com/7Wate">
-                            <svg t="1593676374495" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="25852" width="28" height="28">
-                                <path d="M339.980287 865.145061q0-57.120491-94.274409-57.120491-90.251839 0-90.251839 59.460896 0 57.705592 98.296979 57.705592 86.302407 0 86.302407-59.972859zM306.336976 433.779301q0-34.886651-17.114206-58.290694t-50.830655-23.404043q-70.870366 0-70.870366 82.864938 0 77.160203 70.870366 77.160203 68.017999 0 68.017999-78.257267zM459.999143 248.594815l0 115.411185q-20.551675 6.874938-45.12592 12.579673 9.142204 24.574245 9.142204 47.978287 0 72.552532-41.688451 123.675737t-112.558817 64.287979q-22.818942 4.534533-34.008999 15.432041t-11.11692 33.131348q0 17.699307 12.872223 29.401328t33.131348 18.284408 44.833369 12.579673 49.148489 14.554389 44.833369 21.429326 33.131348 36.568817 12.872223 56.315977q0 173.701878-207.418327 173.701878-39.421184 0-74.307835-7.167488t-66.262696-23.404043-50.026141-46.881223-18.576959-72.845082q0-94.274409 104.001714-128.575959l0-2.267267q-38.250982-23.404043-38.250982-71.967431 0-62.313263 35.983715-78.257267l0-2.267267q-41.176487-13.676737-68.310549-62.020713t-27.134062-94.56696q0-79.427469 54.268124-132.305978t134.280694-52.878509q54.853225 0 101.734448 26.841511 56.023427 0 124.553389-26.841511zM641.673023 752.001143l-126.820656 0q2.267267-25.744447 2.267267-76.575102l0-347.988858q0-53.683023-2.267267-73.137633l126.820656 0q-2.267267 18.869509-2.267267 70.870366l0 350.256125q0 50.830655 2.267267 76.575102zM985.127348 625.180487l0 111.973716q-40.591386 22.306978-99.394043 22.306978-35.398614 0-61.143061-11.409471t-40.006285-28.596815-22.599529-44.540819-10.604957-52.585958-2.267267-58.875795l0-200.54339 1.170202 0 0-2.267267q-4.02257 0-10.82437-0.585101t-10.312406-0.585101q-11.994572 0-33.716449 3.437469l0-108.536247 54.853225 0 0-43.443754q0-30.864081-3.437469-50.830655l129.673023 0q-3.437469 23.404043-3.437469 94.274409l97.711878 0 0 108.536247q-8.557103 0-24.866795-1.170202t-24.281694-1.170202l-48.563388 0 0 208.588529q0 74.819799 49.73359 74.819799 34.886651 0 62.313263-18.869509zM656.007999 84.03514q0 33.131348-22.306978 57.998143t-54.853225 24.866795q-33.131348 0-56.023427-24.866795t-22.818942-57.998143q0-33.716449 22.599529-58.875795t56.315977-25.159346q33.131348 0 55.145775 25.451896t22.014428 58.583244z" p-id="25853" fill="#6a737d"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="right">
-                    <h2>关于我</h2>
-                    <p>一个野鸡大学毕业的菜鸡程序猿，目前在某山区养猪。</p>
-                    <p>喜欢硬件、底层、汇编、逆向、C 天下第一、最讨厌 CSS 以及所有需要设计界面的东西，对我来说这是一种折磨。</p>
-                    <p>7Wate 这个名字的由来是因为大学好友说我脑子瓦特了哈哈哈，主要还是好的域名都被抢走了，不过还是挺喜欢这个域名。</p>
-                    <p>想认认真真的把这个站点运营下去，只因为热爱；也很喜欢交朋友，不介意我们可以交个朋友。</p>
-                    <h2>站点历程</h2>
-                    <p>2020 年 7 月 19 日：加入<a target="_blank" href="https://www.foreverblog.cn/">十年之约</a>（申请中）</p>
-                    <p>2020 年 6 月 25 日：7wate 系列站点正式上线</p>
-                    <p>2020 年 4 月 23 日：服务器搭建完成</p>
-                    <p>2019 年 10 月 28 日：购入服务器</p>
-                    <p>始于二零一二年初夏</p>
-                    <h2>特别声明</h2>
-                    <p>
-                    </p>
-                    <p>本站（7wate.com 及所有子级域名）所有原创内容（包括但不限于文字、图片、音频），未明确标注版权的情况下：</p>
-                    <p>软件类内容：
-                        <a target="_blank" href="http://www.thebigfly.com/gnu/FDLv1.3/">GPL-3.0</a>，非软件类内容：
-                        <a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">署名-相同方式共享 4.0 国际</a>。</p>
-                    <p>本站所有引用第三方原创内容，其所属版权均为原作者所有。如有侵权，请邮件联系删除。</p>
-                    <a target="_blank" href="http://www.thebigfly.com/gnu/FDLv1.3/">
-                        <img src="data:image/png;base64,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"></a>
-                    <a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                        <img src="data:image/png;base64,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"></a>
-                    <a target="_blank" href="https://www.foreverblog.cn/"  > <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:40px;margin-left: 7px;"> </a>
-                </article>
-            </div>
-        </main>
-        <menu id="menu">
-            <ul>
-                <li>
-                    <a href="#" onclick="index()">首页</a></li>
-                <li>
-                    <a href="#">导航</a></li>
-                <li>
-                    <a href="https://blog.7wate.com/">博客</a></li>
-                <li>
-                    <a href="https://book.7wate.com/">书籍</a></li>
-                <li>
-                    <a href="https://wiki.7wate.com/">维基</a></li>
-                <li>
-                    <a href="#" onclick="about()">关于</a></li>
-            </ul>
-        </menu>
-        <footer>
-            <span>© 2020 7Wate . 豫 ICP 备 18024405 号</span></footer>
-        <background></background>
-        <script>
-            setTimeout(function(){document.getElementById("container").style.display = "flex";}, 2000);
-            function toggle() {
-                bodyToggleClass("active");
+
+<head>
+    <meta charset="utf-8">
+    <title>7Wate - 喜欢异想天开的家伙</title>
+    <meta name="description" content="7Wate - 喜欢异想天开的家伙">
+    <meta name="keywords"
+        content="7wate,7wate`s blog,7wate`s book,7wate`s wiki,7wate`s nav,zhouzhongping,typecho,php,blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/background.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#">
+            <img src="img/logo.png" alt=""></a>
+    </header>
+    <nav>
+        <a id="search" target="_blank" href="https://www.baidu.com">
+            <span></span>
+        </a>
+        <a id="toggle" href="#" onclick="toggle()">
+            <span></span>
+        </a>
+    </nav>
+    <main>
+        <div id="container" class="container">
+            <article class="left">
+                <div class="logo-title">
+                    <img src="img/logo.jpg" alt="">
+                    <h2>七瓦特</h2>
+                    <p>一个喜欢异想天开的家伙</p>
+                </div>
+                <div class="links">
+                    <a target="_blank" href="https://www.amap.com/search?query=%E6%B2%B3%E5%8D%97%E9%83%91%E5%B7%9E">
+                        <svg t="1593674944328" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="49601" width="28" height="30">
+                            <path
+                                d="M512 1012.394667l-271.530667-271.530667a384 384 0 1 1 543.061334 0L512 1012.394667z m211.2-331.861334a298.666667 298.666667 0 1 0-422.4 0L512 891.733333l211.2-211.2zM512 554.666667a85.333333 85.333333 0 1 1 0-170.666667 85.333333 85.333333 0 0 1 0 170.666667z"
+                                p-id="49602" fill="#6a737d"></path>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://blog.7wate.com/feed">
+                        <svg t="1593674965625" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="3919" width="27" height="30">
+                            <path
+                                d="M128 128c424.149333 0 768 343.850667 768 768h-128c0-353.450667-286.549333-640-640-640V128z m0 298.666667c259.2 0 469.333333 210.133333 469.333333 469.333333h-128a341.333333 341.333333 0 0 0-341.333333-341.333333v-128z m0 298.666666a170.666667 170.666667 0 0 1 170.666667 170.666667H128v-170.666667z"
+                                p-id="3920" fill="#6a737d"></path>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="mailto:admin@7wate.com">
+                        <svg t="1593675033325" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="24974" width="28" height="30">
+                            <path
+                                d="M128 128h768a42.666667 42.666667 0 0 1 42.666667 42.666667v682.666666a42.666667 42.666667 0 0 1-42.666667 42.666667H128a42.666667 42.666667 0 0 1-42.666667-42.666667V170.666667a42.666667 42.666667 0 0 1 42.666667-42.666667z m725.333333 180.821333l-338.261333 302.933334L170.666667 307.882667V810.666667h682.666666V308.821333zM192.469333 213.333333l322.133334 284.245334L832.085333 213.333333H192.469333z"
+                                p-id="24975" fill="#6a737d"></path>
+                        </svg>
+                    </a>
+                    <a href="#" onclick="wechart()">
+                        <svg t="1593675101701" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="4576" width="30" height="30">
+                            <path
+                                d="M426.666667 626.176v-2.645333c0-107.008 86.016-197.034667 202.794666-223.274667C613.930667 302.037333 510.250667 221.866667 379.733333 221.866667 238.08 221.866667 128 316.288 128 425.813333c0 41.344 15.36 81.066667 44.373333 115.114667 1.365333 1.621333 3.541333 4.010667 6.485334 7.04a152.234667 152.234667 0 0 1 42.752 95.488 154.112 154.112 0 0 1 100.821333-18.858667c7.082667 1.109333 12.885333 1.962667 17.28 2.56A309.504 309.504 0 0 0 426.666667 626.133333z m19.498666 83.242667a392.917333 392.917333 0 0 1-117.461333 2.346666 813.056 813.056 0 0 1-19.370667-2.858666 68.778667 68.778667 0 0 0-46.08 9.045333l-81.237333 48.981333a34.389333 34.389333 0 0 1-20.906667 4.992 33.749333 33.749333 0 0 1-31.104-36.309333l6.4-75.989333a66.773333 66.773333 0 0 0-18.730666-52.181334 236.245333 236.245333 0 0 1-10.282667-11.178666C66.688 548.48 42.666667 489.514667 42.666667 425.770667 42.666667 266.026667 193.578667 136.533333 379.733333 136.533333c173.226667 0 315.861333 112.085333 334.933334 256.341334 143.872 6.528 258.133333 107.306667 258.133333 230.656 0 50.901333-19.456 97.962667-52.437333 136.106666-2.176 2.56-4.949333 5.546667-8.32 8.96a52.906667 52.906667 0 0 0-15.189334 41.642667l5.162667 60.714667a27.093333 27.093333 0 0 1-25.173333 29.013333 28.16 28.16 0 0 1-16.938667-4.010667l-65.834667-39.125333a56.405333 56.405333 0 0 0-37.290666-7.210667c-6.272 0.981333-11.52 1.706667-15.701334 2.261334a329.386667 329.386667 0 0 1-41.344 2.645333c-114.944 0-213.248-60.074667-253.568-145.109333z m297.685334 55.893333a141.866667 141.866667 0 0 1 71.509333 7.424 138.666667 138.666667 0 0 1 35.882667-64.085333c2.133333-2.133333 3.712-3.84 4.522666-4.778667 20.864-24.106667 31.701333-51.754667 31.701334-80.341333 0-76.970667-81.194667-145.664-187.733334-145.664-106.538667 0-187.733333 68.693333-187.733333 145.664s81.194667 145.664 187.733333 145.664c10.282667 0 20.48-0.682667 30.464-1.962667 3.413333-0.426667 8.021333-1.066667 13.653334-1.962667z"
+                                p-id="4577" fill="#6a737d"></path>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://github.com/7Wate">
+                        <svg t="1593676374495" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="25852" width="28" height="28">
+                            <path
+                                d="M339.980287 865.145061q0-57.120491-94.274409-57.120491-90.251839 0-90.251839 59.460896 0 57.705592 98.296979 57.705592 86.302407 0 86.302407-59.972859zM306.336976 433.779301q0-34.886651-17.114206-58.290694t-50.830655-23.404043q-70.870366 0-70.870366 82.864938 0 77.160203 70.870366 77.160203 68.017999 0 68.017999-78.257267zM459.999143 248.594815l0 115.411185q-20.551675 6.874938-45.12592 12.579673 9.142204 24.574245 9.142204 47.978287 0 72.552532-41.688451 123.675737t-112.558817 64.287979q-22.818942 4.534533-34.008999 15.432041t-11.11692 33.131348q0 17.699307 12.872223 29.401328t33.131348 18.284408 44.833369 12.579673 49.148489 14.554389 44.833369 21.429326 33.131348 36.568817 12.872223 56.315977q0 173.701878-207.418327 173.701878-39.421184 0-74.307835-7.167488t-66.262696-23.404043-50.026141-46.881223-18.576959-72.845082q0-94.274409 104.001714-128.575959l0-2.267267q-38.250982-23.404043-38.250982-71.967431 0-62.313263 35.983715-78.257267l0-2.267267q-41.176487-13.676737-68.310549-62.020713t-27.134062-94.56696q0-79.427469 54.268124-132.305978t134.280694-52.878509q54.853225 0 101.734448 26.841511 56.023427 0 124.553389-26.841511zM641.673023 752.001143l-126.820656 0q2.267267-25.744447 2.267267-76.575102l0-347.988858q0-53.683023-2.267267-73.137633l126.820656 0q-2.267267 18.869509-2.267267 70.870366l0 350.256125q0 50.830655 2.267267 76.575102zM985.127348 625.180487l0 111.973716q-40.591386 22.306978-99.394043 22.306978-35.398614 0-61.143061-11.409471t-40.006285-28.596815-22.599529-44.540819-10.604957-52.585958-2.267267-58.875795l0-200.54339 1.170202 0 0-2.267267q-4.02257 0-10.82437-0.585101t-10.312406-0.585101q-11.994572 0-33.716449 3.437469l0-108.536247 54.853225 0 0-43.443754q0-30.864081-3.437469-50.830655l129.673023 0q-3.437469 23.404043-3.437469 94.274409l97.711878 0 0 108.536247q-8.557103 0-24.866795-1.170202t-24.281694-1.170202l-48.563388 0 0 208.588529q0 74.819799 49.73359 74.819799 34.886651 0 62.313263-18.869509zM656.007999 84.03514q0 33.131348-22.306978 57.998143t-54.853225 24.866795q-33.131348 0-56.023427-24.866795t-22.818942-57.998143q0-33.716449 22.599529-58.875795t56.315977-25.159346q33.131348 0 55.145775 25.451896t22.014428 58.583244z"
+                                p-id="25853" fill="#6a737d"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            <article class="right">
+                <h2>关于我</h2>
+                <p>一个畜牧学院毕业的菜鸡程序猿，目前在某山区养猪。</p>
+                <p>喜欢硬件、底层、汇编、逆向、C 天下第一、最讨厌 CSS 以及所有需要设计界面的东西，对我来说这是一种折磨。</p>
+                <p>7Wate 这个名字的由来是因为大学好友说我脑子瓦特了哈哈哈，主要还是好的域名都被抢走了，不过还是挺喜欢这个域名。</p>
+                <p>想认认真真的把这个站点运营下去，只因为热爱；也很喜欢交朋友，不介意我们可以交个朋友。</p>
+                <h2>站点历程</h2>
+                <p>2020 年 7 月 19 日：加入<a target="_blank" href="https://www.foreverblog.cn/">十年之约</a>（申请中）</p>
+                <p>2020 年 6 月 25 日：7wate 系列站点正式上线</p>
+                <p>2020 年 4 月 23 日：服务器搭建完成</p>
+                <p>2019 年 10 月 28 日：购入服务器</p>
+                <p>始于二零一二年初夏</p>
+                <h2>特别声明</h2>
+                <p>
+                </p>
+                <p>本站（7wate.com 及所有子级域名，以下简称本站）使用腾讯大数据统计流量。</p>
+                <p>本站不要求访客提供任何敏感信息，不存在任何隐私泄露问题（姓名、身份证等）。</p>
+                <p>请遵守基本的礼貌规范，禁止评论任何有关时政、热点、反动、违法、暴力、恐吓、赌博或淫秽的内容。</p>
+                <p>本站所有原创内容（包括但不限于文字、图片、音频，以下简称原创内容）仅为个人言论。</p>
+                <p>本站所有原创内容，未明确标注版权的情况下：</p>
+                <p>软件类内容：
+                    <a target="_blank" href="http://www.thebigfly.com/gnu/FDLv1.3/">GPL-3.0</a>，非软件类内容：
+                    <a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">署名-相同方式共享 4.0 国际</a>。</p>
+                <p>本站所有引用第三方原创内容，其所属版权均为原作者所有。如有侵权，<a target="_blank" href="mailto:admin@7wate.com">邮件联系</a>删除。</p>
+                <a target="_blank" href="http://www.thebigfly.com/gnu/FDLv1.3/">
+                    <img
+                        src="data:image/png;base64,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"></a>
+                <a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    <img
+                        src="data:image/png;base64,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"></a>
+                <a target="_blank" href="https://www.foreverblog.cn/"> <img
+                        src="https://img.foreverblog.cn/logo_en_default.png" alt=""
+                        style="width:auto;height:40px;margin-left: 7px;"> </a>
+                <p style="text-align: right;">最后更新日期：2020 年 8 月 6 日</p>
+            </article>
+        </div>
+    </main>
+    <menu id="menu">
+        <ul>
+            <li>
+                <a href="#" onclick="index()">首页</a></li>
+            <li>
+                <a href="#">导航</a></li>
+            <li>
+                <a href="https://blog.7wate.com/">博客</a></li>
+            <li>
+                <a href="https://book.7wate.com/">书籍</a></li>
+            <li>
+                <a href="https://wiki.7wate.com/">维基</a></li>
+            <li>
+                <a href="#" onclick="about()">关于</a></li>
+        </ul>
+    </menu>
+    <footer>
+        <span>© 2020 7Wate . 豫 ICP 备 18024405 号</span></footer>
+    <background></background>
+    <script>
+        function toggle() {
+            bodyToggleClass("active");
+        }
+        function index() {
+            bodyToggleClass("active", "about");
+        }
+        function about() {
+            bodyToggleClass("about", "active");
+        }
+
+        function bodyToggleClass(className, orClassName) {
+            var body = document.getElementsByTagName("body")[0];
+
+            if (orClassName) {
+                body.classList.remove(orClassName);
             }
-            function index() {
-                bodyToggleClass("active", "about");
-            }
-            function about() {
-                bodyToggleClass("about", "active");
-            }
 
-            function bodyToggleClass(className, orClassName) {
-                var body = document.getElementsByTagName("body")[0];
+            if (body.classList.contains(className)) {
+                body.classList.remove(className);
 
-                if (orClassName) {
-                    body.classList.remove(orClassName);
-                }
-
-                if (body.classList.contains(className)) {
-                    body.classList.remove(className);
-
-                    return;
-                }
-
-                body.classList.add(className);
+                return;
             }
 
-            function wechart() {
-                console.info("M2NiNTMyOGI4YjQyNWRiZjNiNDM3YjVkZGUxM2NlZGY=");
-            }</script>
-    </body>
+            body.classList.add(className);
+        }
+
+        function wechart() {
+            console.info("M2NiNTMyOGI4YjQyNWRiZjNiNDM3YjVkZGUxM2NlZGY=");
+        }</script>
+</body>
 
 </html>

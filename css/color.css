@@ -1,28 +1,37 @@
-/* 默认导航栏搜索框色彩 */
+/* 搜索按钮 */
 
-.default>nav>a#search>span::before,.default>nav>a#search>span::after {
-	border-color:#333;
-}
-/* 默认导航栏菜单栏色彩 */
-
-.default>nav>a#toggle>span,.default>nav>a#toggle>span::before,.default>nav>a#toggle>span::after {
-	background-color:#333;
-}
-/* 默认导航栏菜单栏激活色彩 */
-.active>nav>a#toggle>span::before,.active>nav>a#toggle>span::after {
-	background-color:#fbeae9!important;
+nav>a#search>span::before, nav>a#search>span::after {
+	border-color: #000;
 }
 
-/* 默认右侧菜单栏色彩 */
+/* 菜单按钮 */
 
-.default>menu {
-	background-color:#333;
+nav>a#toggle>span, nav>a#toggle>span::before, nav>a#toggle>span::after {
+	background-color: #000;
 }
-/* 默认右侧菜单栏链接色彩 */
 
-.default>menu>ul>li>a {
-	color:#fbeae9;
+/* 菜单按钮激活 */
+
+.active>nav>a#toggle>span::before, .active>nav>a#toggle>span::after {
+	background-color: #fbeae9!important;
 }
-.default>footer>span {
-	color:#000;
+
+.active>nav>a#toggle>span {
+	background-color: #333;
+}
+
+/* 菜单栏 */
+
+menu {
+	background-color: #333;
+}
+
+/* 菜单栏链接 */
+
+menu>ul>li>a {
+	color: #fbeae9;
+}
+
+footer>span {
+	color: #000;
 }
