@@ -151,7 +151,7 @@ main {
 }
 
 .about>main>.container {
-	display: flex!important;
+	display:flex;
 }
 
 .container {
