@@ -16,6 +16,8 @@
 
 2020 年 7 月 1 日：背影
 
+2020 年 11 月 1 日：她
+
 ## License
 
 [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.html)
