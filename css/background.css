@@ -21,7 +21,7 @@ background {
 
 background {
 	transition: all 700ms ease-out;
-	background-position: 52%;
+	background-position: 30%;
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
 }
